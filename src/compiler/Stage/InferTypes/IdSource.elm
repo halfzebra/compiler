@@ -75,7 +75,6 @@ generateWith :
     -> Output ( expr, Id )
 generateWith unusedId varIds gen =
     -- TODO think of how to not depend on the VarName?
-    -- TODO maybe do the ID incrementing here after the `case...of`, instead of in all the case functions?
     incrementId <|
         case gen of
             Constant expr ->
